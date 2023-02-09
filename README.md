@@ -63,4 +63,4 @@ The above line in terminal builds a pipeline to make the downloaded indri c++ co
 Note that queries must be extracted in advance before running the queries.
   
 ### Ranking results
-See report.pdf for detailed comparison.
+See WSM_indri.pdf for detailed comparison.

@@ -15,3 +15,26 @@ The implemented ranking functions include:<br />
 * Language modeling, Jelinek-Mercer smoothing using the corpus, 0.8 of the weight attached to the background probability, query likelihood
 
 ## User Guide
+### Environment
+This experiment uses Ubuntu 20.04
+### Download Indri-5.18
+Link to download: https://sourceforge.net/p/lemur/wiki/Home/
+### Download Datasets
+a set of 50 TREC queries for the corpus, with the standard TREC format having topic title, description and narrative. Documents from the corpus have been judged with respect to their relevance to these queries by NIST assessors. queries must be downloaded before proceed in the following operation.
+### File tree
+indri-5.18<br />
+|<br />
+-----------run.sh<br />
+|<br />
+-----------WT2G collection<br />
+|<br />
+-----------queries<br />
+|<br />
+-----------<other files><br />
+### Run
+```
+./run.sh```
+The above line in terminal builds a pipeline to make the downloaded indri c++ code, build index, run query, and evaluate the return searching results.
+Note that queries must be extracted in advance before running the queries.
+### Ranking results
+See report.pdf for detailed comparison.

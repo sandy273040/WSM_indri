@@ -14,7 +14,7 @@ The implemented ranking functions include:<br />
 * Language modeling, maximum likelihood estimates with Laplace smoothing only, query likelihood
 * Language modeling, Jelinek-Mercer smoothing using the corpus, 0.8 of the weight attached to the background probability, query likelihood
 
-## Implement Laplace smoothing Location
+## Implement Laplace smoothing in codebase
 * Put the modified ```LaplaceTermScoreFunction.hpp``` in ```include/indri```directory.
 * In ```src/TermScoreFactory.cpp```
   * add ```#include "indri/LaplaceTermScoreFunction.hpp"``` at the beginning

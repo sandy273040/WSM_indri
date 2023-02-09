@@ -15,8 +15,16 @@ The implemented ranking functions include:<br />
 * Language modeling, Jelinek-Mercer smoothing using the corpus, 0.8 of the weight attached to the background probability, query likelihood
 
 ## Implement Laplace smoothing Location
-* Put the ```LaplaceTermScoreFunction.hpp``` in ```include -> indri```directory.
-* Modify functions to call LaplaceTermScoreFunction.
+* Put the modified ```LaplaceTermScoreFunction.hpp``` in ```include/indri```directory.
+* In ```src/TermScoreFactory.cpp```
+  * add ```#include "indri/LaplaceTermScoreFunction.hpp"``` at the beginning
+  * add the following code in line 61:
+  ```
+  else if( method == "laplace" || method == "add_one" || method == "l" ) {
+    double alpha = spec.get( "alpha", 1.0 );
+    return new indri::query::LaplaceTermScoreFunction( spec.get("index_path", ""), alpha );
+  }
+   ```
 
 ## User Guide
 ### Environment
@@ -34,6 +42,10 @@ indri-5.18<br />
 -----------WT2G collection<br />
 |<br />
 -----------queries<br />
+|<br />
+-----------index params<br />
+|<br />
+-----------query params<br />
 |<br />
 -----------< other files ><br />
 <br />

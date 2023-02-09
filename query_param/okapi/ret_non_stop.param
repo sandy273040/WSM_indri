@@ -1,0 +1,9 @@
+<parameters>
+   <index>/mnt/c/indri-5.18/index/non_stop</index>
+   <count>1000</count>
+   <baseline>method:okapi,k1:2.0, b=0.75</baseline>
+   <trecFormat>true</trecFormat>
+   <queryOffset>401</queryOffset>
+   <runID>OKAPI</runID>
+</parameters>
+

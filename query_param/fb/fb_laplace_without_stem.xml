@@ -1,0 +1,14 @@
+<parameters>
+   <index>/mnt/c/indri-5.18/index/index_without_stemming</index>
+   <count>1000</count>
+   <!-- <rule>method:laplace,alpha:1.0</rule> -->
+   <trecFormat>true</trecFormat>
+   <queryOffset>401</queryOffset>
+   <runID>FB</runID>
+   <retModel>indri</retModel>
+   <fbDocs>10</fbDocs>
+   <fbTerms>30</fbTerms> 
+   <fbMu>0.5</fbMu> 
+   <fbOrigWeight>0.5</fbOrigWeight>
+</parameters>
+

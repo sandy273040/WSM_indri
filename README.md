@@ -52,6 +52,11 @@ indri-5.18<br />
 
 ### Run
 ```
+./query_build.sh
+```
+run this script to build queries from TREC queries.
+
+```
 ./run.sh
 ```
 The above line in terminal builds a pipeline to make the downloaded indri c++ code, build index, run query, and evaluate the return searching results.

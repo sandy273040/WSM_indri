@@ -2,7 +2,7 @@
 #######################################################################
 # THIS IS THE TEST SCRIPT FOR THE INDRI QUERY LANGUAGE                #
 #######################################################################
-re make the modified functions
+#remake the modified functions
 cd /mnt/c/indri-5.18
 ./configure
 make
@@ -83,5 +83,5 @@ perl trec_eval qrels.401-450.txt res/jm/res_without_stem.txt
 echo "----------------------------------------------------------------"
 IndriRunQuery query_param/fb/fb_laplace_without_stem.xml query.txt > res/fb/fb_res_without_stem.txt
 
-#echo "----------------------------------------------------------------"
+#run accuracy evaluation
 perl trec_eval qrels.401-450.txt res/fb/fb_res_without_stem.txt
